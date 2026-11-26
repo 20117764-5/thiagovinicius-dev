@@ -1,0 +1,52 @@
+<!-- Hero (uma tela, escala de cena). Cada bloco com data-camada é uma camada que os agentes montam: quadro (o fundo),
+     titulo, texto (digitado), bloco (caixa que aparece; se tiver camadas dentro, só o fundo e a borda dela) e foto.
+     data-parte divide o hero em montagens separadas no celular, onde ele tem mais de uma tela. -->
+<section class="hero" id="topo" data-montagem="hero">
+  <div class="hero__quadro" data-camada="quadro" aria-hidden="true"></div>
+
+  <div class="hero__a" data-parte>
+    <p class="hero__papel">
+      <span class="hero__papel-1" data-camada="texto">Desenvolvimento de software</span>
+      <span class="hero__papel-2" data-camada="texto">ADS · Engenharia de Software</span>
+    </p>
+    <p class="hero__status" data-camada="texto"><i class="ponto" aria-hidden="true"></i>Portfólio pessoal</p>
+
+    <p class="hero__titulo" data-camada="titulo" aria-hidden="true"><span>PORTFÓLIO</span></p>
+
+    <figure class="hero__foto">
+      <span class="hero__retrato" data-camada="foto" data-ajusta="96,-34"><img src="/img/kairo-perfil.webp" width="900" height="900" alt="Thiago Vinicius sorrindo, de óculos e camiseta branca" fetchpriority="high" decoding="async" /></span>
+    </figure>
+
+    <div class="hero__esq">
+      <h1 class="hero__quem">
+        <span class="hero__ola" data-camada="texto">Olá, eu sou</span>
+        <span class="hero__nome" data-camada="texto">THIAGO <span class="hero__sobrenome">VINICIUS<span class="pq">.</span></span></span>
+      </h1>
+      <p class="hero__cargo" data-camada="texto">ADS &amp; Engenharia<br />de Software</p>
+      <p class="hero__texto" data-camada="texto">Tenho 24 anos e minha formação passa por Análise e Desenvolvimento de Sistemas e Engenharia de Software.</p>
+      <a class="hero__botao sel" href="#projetos" data-camada="bloco"><span data-camada="texto"><span>Ver projetos</span><svg class="ico" aria-hidden="true"><use href="#u-baixo"/></svg></span></a>
+      <p class="hero__local" data-camada="texto"><svg class="ico" aria-hidden="true"><use href="#u-local"/></svg><span>Brasil</span></p>
+    </div>
+  </div>
+
+  <div class="hero__dir" data-parte>
+    <p class="hero__lema">
+      <span class="hero__aster anel" data-camada="bloco" aria-hidden="true"><svg class="ico"><use href="#u-aster"/></svg></span>
+      <span data-camada="texto">Do rascunho<br />ao código.</span>
+    </p>
+    <ul class="hero__numeros" data-duplica>
+      <li><strong data-camada="texto">24</strong><span data-camada="texto">Anos de idade</span></li>
+      <li><strong data-camada="texto">02</strong><span data-camada="texto">Cursos de<br />nível superior</span></li>
+      <li><a class="hero__num-link sel" href="#projetos"><strong data-camada="texto">03</strong><span data-camada="texto">Projetos<br />da demo<svg class="ico" aria-hidden="true"><use href="#u-ne"/></svg></span></a></li>
+    </ul>
+  </div>
+
+  <div class="hero__pe" data-parte>
+    <a class="hero__caso sel" href="#bastidor">
+      <span class="hero__play anel" data-camada="bloco" aria-hidden="true"><svg class="ico"><use href="#u-play"/></svg></span>
+      <span data-camada="texto">Explorar o caso da demo</span>
+      <span class="hero__caso-tipo" data-camada="texto">Agente / WhatsApp</span>
+    </a>
+    <p class="hero__anos" data-camada="texto">Demonstração / Kairo</p>
+  </div>
+</section>
